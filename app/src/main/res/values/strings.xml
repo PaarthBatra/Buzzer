@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VersionPB Buzzer</string>
+    <string name="btn_buzz">BUZZ!</string>
+    <string name="buzzed">🔔 BUZZED!</string>
+</resources>

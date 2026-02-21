@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- ── Brand Colors ────────────────────────────────────────────── -->
+    <!-- Primary: Deep Indigo -->
+    <color name="primary">#4B3FCA</color>
+    <color name="primary_dark">#3630A0</color>
+    <color name="primary_light">#7B72E9</color>
+
+    <!-- Accent: Vibrant Coral (for winner announcements) -->
+    <color name="accent">#FF5C5C</color>
+
+    <!-- Buzz Button: Bold Red -->
+    <color name="buzz_red">#E53935</color>
+    <color name="buzz_red_pressed">#B71C1C</color>
+    <color name="buzz_red_disabled">#BDBDBD</color>
+
+    <!-- ── Neutral ──────────────────────────────────────────────────── -->
+    <color name="background">#F5F5F7</color>
+    <color name="surface">#FFFFFF</color>
+    <color name="divider">#E0E0E0</color>
+
+    <!-- ── Text ─────────────────────────────────────────────────────── -->
+    <color name="text_primary">#1A1A2E</color>
+    <color name="text_secondary">#6B6B8D</color>
+    <color name="text_hint">#AAAACC</color>
+
+    <!-- ── Whites (for splash / dark backgrounds) ──────────────────── -->
+    <color name="white">#FFFFFF</color>
+    <color name="white_70">#B3FFFFFF</color>
+    <color name="white_50">#80FFFFFF</color>
+
+    <!-- ── Splash Background ────────────────────────────────────────── -->
+    <color name="splash_background">#4B3FCA</color>
+
+    <!-- ── Material Design System Colors ────────────────────────────── -->
+    <color name="colorPrimary">#4B3FCA</color>
+    <color name="colorPrimaryVariant">#3630A0</color>
+    <color name="colorSecondary">#FF5C5C</color>
+    <color name="colorSecondaryVariant">#CC3A3A</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorOnSecondary">#FFFFFF</color>
+    <color name="colorError">#B00020</color>
+    <color name="colorOnError">#FFFFFF</color>
+    <color name="colorBackground">#F5F5F7</color>
+    <color name="colorOnBackground">#1A1A2E</color>
+    <color name="colorSurface">#FFFFFF</color>
+    <color name="colorOnSurface">#1A1A2E</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Required by AndroidManifest android:dataExtractionRules (API 31+).
+  Specifies what data is excluded from cloud backups.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="sharedpref" path="versionpb_buzzer_prefs.xml" />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="sharedpref" path="versionpb_buzzer_prefs.xml" />
+    </device-transfer>
+</data-extraction-rules>

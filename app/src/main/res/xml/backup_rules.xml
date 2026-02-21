@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Required by AndroidManifest android:fullBackupContent.
+  Specifies which files are included/excluded from Auto Backup.
+-->
+<full-backup-content>
+    <!-- Exclude user preferences from backup (contains only non-sensitive settings) -->
+    <exclude domain="sharedpref" path="versionpb_buzzer_prefs.xml" />
+</full-backup-content>

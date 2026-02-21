@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Adaptive launcher icon definition (API 26+).
+  Uses ic_launcher_foreground vector as the foreground layer.
+  Background is a solid brand-indigo color.
+
+  Place this file in: res/mipmap-anydpi-v26/ic_launcher.xml
+  AND:               res/mipmap-anydpi-v26/ic_launcher_round.xml
+-->
+<adaptive-icon xmlns:android="http://schemas.android.com/apk/res/android">
+    <background android:drawable="@color/primary" />
+    <foreground android:drawable="@drawable/ic_launcher_foreground" />
+</adaptive-icon>

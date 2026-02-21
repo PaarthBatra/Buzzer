@@ -1,0 +1,42 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        // Centralized version management — update here to affect all modules
+        compileSdkVersion    = 34
+        minSdkVersion        = 21
+        targetSdkVersion     = 34
+        buildToolsVersion    = "34.0.0"
+        versionCode          = 1
+        versionName          = "1.0.0"
+
+        // AndroidX / Jetpack
+        appcompatVersion         = "1.7.0"
+        materialVersion          = "1.12.0"
+        constraintlayoutVersion  = "2.1.4"
+        lifecycleVersion         = "2.8.4"
+        activityVersion          = "1.9.1"
+
+        // Testing
+        junitVersion             = "4.13.2"
+        extJunitVersion          = "1.2.1"
+        espressoVersion          = "3.6.1"
+    }
+
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.4.2"
+        // NOTE: Add 'com.google.gms:google-services' here when integrating Firebase
+    }
+}
+
+// NOTE: allprojects repositories block is intentionally removed.
+// Repositories are declared in settings.gradle (dependencyResolutionManagement)
+// to comply with FAIL_ON_PROJECT_REPOS mode in Gradle 7+.
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

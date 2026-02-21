@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Drawable background for player name input EditText fields.
+  Rounded rectangle with a border that uses brand color.
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/surface" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/divider" />
+
+    <corners android:radius="8dp" />
+
+</shape>
