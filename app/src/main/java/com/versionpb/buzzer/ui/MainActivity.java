@@ -15,6 +15,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.versionpb.buzzer.R;
+import com.versionpb.buzzer.Config;
 
 /**
  * Single-screen buzzer app.
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
     private TextView tvStatus;
     private TextView tvTimer;
+    private TextView tvAppVersion;
     private Button btnBuzz;
     private Vibrator vibrator;
 
@@ -53,10 +55,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // Setup custom Toolbar
+        androidx.appcompat.widget.Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(R.string.app_name);
+        }
+
+        tvAppVersion = findViewById(R.id.tvAppVersion);
         tvStatus = findViewById(R.id.tvStatus);
         tvTimer = findViewById(R.id.tvTimer);
         btnBuzz = findViewById(R.id.btnBuzz);
         vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
+
+        // Display version in Toolbar end
+        tvAppVersion.setText("V " + Config.APP_VERSION);
 
         // Pre-prepare sound for instant playback
         initMediaPlayer();

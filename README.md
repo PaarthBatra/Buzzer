@@ -3,28 +3,25 @@
 A minimal, high-performance buzzer application for single-device interaction.
 
 ## Features
-- **Instant Response**: Minimal latency between tap and feedback.
-- **Haptic Feedback**: Strong vibration pulse on every buzz.
-- **Visual Confirmation**: Clear "BUZZED!" status indicator.
-- **Dark Mode Aesthetic**: Eye-friendly dark background for focus.
+- **Instant Response**: Minimal latency between tap and audio feedback.
+- **Natural Looping**: High-quality buzzer sound that loops seamlessly.
+- **Orange Tap Animation**: Smooth color transition on the BUZZ button for tactile visual feedback.
+- **Haptic Feedback**: Strong, continuous vibration pulse while the button is held.
+- **Right-Aligned Versioning**: Official app version ("V 1.0") displayed elegantly in the top bar.
+- **Premium Indigo Theme**: Professional dark aesthetic with Deep Indigo accents.
+- **Debug Precision**: On-screen hold-timer for exact duration measurement.
 
 ## Version History
-
-### v1.1.0 (2026-02-21)
-- **Extreme Simplification**: Scrapped MVVM and multi-screen logic for a streamlined single-activity experience.
-- **Performance Optimization**: Removed all unnecessary background management and lifecycle observers.
-- **Compatibility Fix**: Switched to system fonts (sans-serif-black) to ensure 100% reliable layout inflation across all Android devices.
-- **Critical Fix**: Resolved SplashActivity theme conflict and resource naming issues.
-
-### v1.0.0 (Initial Implementation)
-- Original MVP with multi-player lobby, score tracking, and custom managers. (Now deprecated in favor of v1.1.0 simplicity).
+See [VERSION_HISTORY.md](file:///c:/Drive%20D/Paarth/Code/Buzzer/Buzzer/VERSION_HISTORY.md) for a full list of changes.
 
 ## Technical Details
 - **Architecture**: Single Activity (MainActivity).
+- **Core Engine**: `MediaPlayer` with `setLooping(true)`.
+- **Animation**: `ValueAnimator` with `ArgbEvaluator`.
+- **Styling**: `Material3` with custom `Toolbar`.
 - **Minimum SDK**: 21 (Android 5.0).
 - **Target SDK**: 34 (Android 14).
 - **Language**: Java.
-- **UI Framework**: XML Layouts with Material Design components.
 
 ## Installation
 Run `.\gradlew.bat assembleDebug` and install the generated APK from `app/build/outputs/apk/debug/app-debug.apk`.
